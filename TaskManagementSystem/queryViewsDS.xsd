@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="queryViewsDS" targetNamespace="http://tempuri.org/queryViewsDS.xsd" xmlns:mstns="http://tempuri.org/queryViewsDS.xsd" xmlns="http://tempuri.org/queryViewsDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TaskManagementSystemConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TaskManagementSystemConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TaskManagementSystem.Properties.Settings.GlobalReference.Default.TaskManagementSystemConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap1TableAdapter" GeneratorDataComponentClassName="zap1TableAdapter" Name="zap1" UserDataComponentName="zap1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TaskManagementSystemConnectionString (Settings)" DbObjectName="TaskManagementSystem.dbo.zap1" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Проект, Организация, Отделение, Исполнитель FROM dbo.zap1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Проект" DataSetColumn="Проект" />
+              <Mapping SourceColumn="Организация" DataSetColumn="Организация" />
+              <Mapping SourceColumn="Отделение" DataSetColumn="Отделение" />
+              <Mapping SourceColumn="Исполнитель" DataSetColumn="Исполнитель" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap10TableAdapter" GeneratorDataComponentClassName="zap10TableAdapter" Name="zap10" UserDataComponentName="zap10TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TaskManagementSystemConnectionString (Settings)" DbObjectName="TaskManagementSystem.dbo.zap10" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Проект, [Дата окончания] FROM dbo.zap10</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Проект" DataSetColumn="Проект" />
+              <Mapping SourceColumn="Дата окончания" DataSetColumn="Дата окончания" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap11TableAdapter" GeneratorDataComponentClassName="zap11TableAdapter" Name="zap11" UserDataComponentName="zap11TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TaskManagementSystemConnectionString (Settings)" DbObjectName="TaskManagementSystem.dbo.zap11" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Отдел FROM dbo.zap11</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Отдел" DataSetColumn="Отдел" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap12TableAdapter" GeneratorDataComponentClassName="zap12TableAdapter" Name="zap12" UserDataComponentName="zap12TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TaskManagementSystemConnectionString (Settings)" DbObjectName="TaskManagementSystem.dbo.zap12" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Проект, Отдел, Сотрудник FROM dbo.zap12</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Проект" DataSetColumn="Проект" />
+              <Mapping SourceColumn="Отдел" DataSetColumn="Отдел" />
+              <Mapping SourceColumn="Сотрудник" DataSetColumn="Сотрудник" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap2TableAdapter" GeneratorDataComponentClassName="zap2TableAdapter" Name="zap2" UserDataComponentName="zap2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TaskManagementSystemConnectionString (Settings)" DbObjectName="TaskManagementSystem.dbo.zap2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Проект, [Дата начала] FROM dbo.zap2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Проект" DataSetColumn="Проект" />
+              <Mapping SourceColumn="Дата начала" DataSetColumn="Дата начала" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap3TableAdapter" GeneratorDataComponentClassName="zap3TableAdapter" Name="zap3" UserDataComponentName="zap3TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TaskManagementSystemConnectionString (Settings)" DbObjectName="TaskManagementSystem.dbo.zap3" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Сотрудник, Отделение, [Средний оклад] FROM dbo.zap3</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Сотрудник" DataSetColumn="Сотрудник" />
+              <Mapping SourceColumn="Отделение" DataSetColumn="Отделение" />
+              <Mapping SourceColumn="Средний оклад" DataSetColumn="Средний оклад" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap4TableAdapter" GeneratorDataComponentClassName="zap4TableAdapter" Name="zap4" UserDataComponentName="zap4TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TaskManagementSystemConnectionString (Settings)" DbObjectName="TaskManagementSystem.dbo.zap4" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Отдел, [Количество проектов] FROM dbo.zap4</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Отдел" DataSetColumn="Отдел" />
+              <Mapping SourceColumn="Количество проектов" DataSetColumn="Количество проектов" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap5TableAdapter" GeneratorDataComponentClassName="zap5TableAdapter" Name="zap5" UserDataComponentName="zap5TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TaskManagementSystemConnectionString (Settings)" DbObjectName="TaskManagementSystem.dbo.zap5" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Сотрудник, Проект, [Примерная дата окончания] FROM dbo.zap5</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Сотрудник" DataSetColumn="Сотрудник" />
+              <Mapping SourceColumn="Проект" DataSetColumn="Проект" />
+              <Mapping SourceColumn="Примерная дата окончания" DataSetColumn="Примерная дата окончания" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap6TableAdapter" GeneratorDataComponentClassName="zap6TableAdapter" Name="zap6" UserDataComponentName="zap6TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TaskManagementSystemConnectionString (Settings)" DbObjectName="TaskManagementSystem.dbo.zap6" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Сотрудник FROM dbo.zap6</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Сотрудник" DataSetColumn="Сотрудник" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap7TableAdapter" GeneratorDataComponentClassName="zap7TableAdapter" Name="zap7" UserDataComponentName="zap7TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TaskManagementSystemConnectionString (Settings)" DbObjectName="TaskManagementSystem.dbo.zap7" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Сотрудник, Проект, [Просрочка(дни)] FROM dbo.zap7</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Сотрудник" DataSetColumn="Сотрудник" />
+              <Mapping SourceColumn="Проект" DataSetColumn="Проект" />
+              <Mapping SourceColumn="Просрочка(дни)" DataSetColumn="Просрочка(дни)" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap8TableAdapter" GeneratorDataComponentClassName="zap8TableAdapter" Name="zap8" UserDataComponentName="zap8TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TaskManagementSystemConnectionString (Settings)" DbObjectName="TaskManagementSystem.dbo.zap8" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Сотрудник FROM dbo.zap8</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Сотрудник" DataSetColumn="Сотрудник" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zap9TableAdapter" GeneratorDataComponentClassName="zap9TableAdapter" Name="zap9" UserDataComponentName="zap9TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TaskManagementSystemConnectionString (Settings)" DbObjectName="TaskManagementSystem.dbo.zap9" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Проект FROM dbo.zap9</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Проект" DataSetColumn="Проект" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="queryViewsDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="queryViewsDS" msprop:Generator_DataSetName="queryViewsDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="zap1" msprop:Generator_RowEvHandlerName="zap1RowChangeEventHandler" msprop:Generator_RowDeletedName="zap1RowDeleted" msprop:Generator_RowDeletingName="zap1RowDeleting" msprop:Generator_RowEvArgName="zap1RowChangeEvent" msprop:Generator_TablePropName="zap1" msprop:Generator_RowChangedName="zap1RowChanged" msprop:Generator_RowChangingName="zap1RowChanging" msprop:Generator_TableClassName="zap1DataTable" msprop:Generator_RowClassName="zap1Row" msprop:Generator_TableVarName="tablezap1" msprop:Generator_UserTableName="zap1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Проект" msprop:Generator_ColumnPropNameInRow="Проект" msprop:Generator_ColumnPropNameInTable="ПроектColumn" msprop:Generator_ColumnVarNameInTable="columnПроект" msprop:Generator_UserColumnName="Проект" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Организация" msprop:Generator_ColumnPropNameInRow="Организация" msprop:Generator_ColumnPropNameInTable="ОрганизацияColumn" msprop:Generator_ColumnVarNameInTable="columnОрганизация" msprop:Generator_UserColumnName="Организация" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отделение" msprop:Generator_ColumnPropNameInRow="Отделение" msprop:Generator_ColumnPropNameInTable="ОтделениеColumn" msprop:Generator_ColumnVarNameInTable="columnОтделение" msprop:Generator_UserColumnName="Отделение" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Исполнитель" msprop:Generator_ColumnPropNameInRow="Исполнитель" msprop:Generator_ColumnPropNameInTable="ИсполнительColumn" msprop:Generator_ColumnVarNameInTable="columnИсполнитель" msprop:Generator_UserColumnName="Исполнитель" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap10" msprop:Generator_RowEvHandlerName="zap10RowChangeEventHandler" msprop:Generator_RowDeletedName="zap10RowDeleted" msprop:Generator_RowDeletingName="zap10RowDeleting" msprop:Generator_RowEvArgName="zap10RowChangeEvent" msprop:Generator_TablePropName="zap10" msprop:Generator_RowChangedName="zap10RowChanged" msprop:Generator_RowChangingName="zap10RowChanging" msprop:Generator_TableClassName="zap10DataTable" msprop:Generator_RowClassName="zap10Row" msprop:Generator_TableVarName="tablezap10" msprop:Generator_UserTableName="zap10">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Проект" msprop:Generator_ColumnPropNameInRow="Проект" msprop:Generator_ColumnPropNameInTable="ПроектColumn" msprop:Generator_ColumnVarNameInTable="columnПроект" msprop:Generator_UserColumnName="Проект" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата_x0020_окончания" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="Дата_окончания" msprop:Generator_ColumnPropNameInTable="Дата_окончанияColumn" msprop:Generator_ColumnVarNameInTable="columnДата_окончания" msprop:Generator_UserColumnName="Дата окончания" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap11" msprop:Generator_RowEvHandlerName="zap11RowChangeEventHandler" msprop:Generator_RowDeletedName="zap11RowDeleted" msprop:Generator_RowDeletingName="zap11RowDeleting" msprop:Generator_RowEvArgName="zap11RowChangeEvent" msprop:Generator_TablePropName="zap11" msprop:Generator_RowChangedName="zap11RowChanged" msprop:Generator_RowChangingName="zap11RowChanging" msprop:Generator_TableClassName="zap11DataTable" msprop:Generator_RowClassName="zap11Row" msprop:Generator_TableVarName="tablezap11" msprop:Generator_UserTableName="zap11">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Отдел" msprop:Generator_ColumnPropNameInRow="Отдел" msprop:Generator_ColumnPropNameInTable="ОтделColumn" msprop:Generator_ColumnVarNameInTable="columnОтдел" msprop:Generator_UserColumnName="Отдел" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap12" msprop:Generator_RowEvHandlerName="zap12RowChangeEventHandler" msprop:Generator_RowDeletedName="zap12RowDeleted" msprop:Generator_RowDeletingName="zap12RowDeleting" msprop:Generator_RowEvArgName="zap12RowChangeEvent" msprop:Generator_TablePropName="zap12" msprop:Generator_RowChangedName="zap12RowChanged" msprop:Generator_RowChangingName="zap12RowChanging" msprop:Generator_TableClassName="zap12DataTable" msprop:Generator_RowClassName="zap12Row" msprop:Generator_TableVarName="tablezap12" msprop:Generator_UserTableName="zap12">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Проект" msprop:Generator_ColumnPropNameInRow="Проект" msprop:Generator_ColumnPropNameInTable="ПроектColumn" msprop:Generator_ColumnVarNameInTable="columnПроект" msprop:Generator_UserColumnName="Проект" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отдел" msprop:Generator_ColumnPropNameInRow="Отдел" msprop:Generator_ColumnPropNameInTable="ОтделColumn" msprop:Generator_ColumnVarNameInTable="columnОтдел" msprop:Generator_UserColumnName="Отдел" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Сотрудник" msprop:Generator_ColumnPropNameInRow="Сотрудник" msprop:Generator_ColumnPropNameInTable="СотрудникColumn" msprop:Generator_ColumnVarNameInTable="columnСотрудник" msprop:Generator_UserColumnName="Сотрудник" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap2" msprop:Generator_RowEvHandlerName="zap2RowChangeEventHandler" msprop:Generator_RowDeletedName="zap2RowDeleted" msprop:Generator_RowDeletingName="zap2RowDeleting" msprop:Generator_RowEvArgName="zap2RowChangeEvent" msprop:Generator_TablePropName="zap2" msprop:Generator_RowChangedName="zap2RowChanged" msprop:Generator_RowChangingName="zap2RowChanging" msprop:Generator_TableClassName="zap2DataTable" msprop:Generator_RowClassName="zap2Row" msprop:Generator_TableVarName="tablezap2" msprop:Generator_UserTableName="zap2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Проект" msprop:Generator_ColumnPropNameInRow="Проект" msprop:Generator_ColumnPropNameInTable="ПроектColumn" msprop:Generator_ColumnVarNameInTable="columnПроект" msprop:Generator_UserColumnName="Проект" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата_x0020_начала" msprop:Generator_ColumnPropNameInRow="Дата_начала" msprop:Generator_ColumnPropNameInTable="Дата_началаColumn" msprop:Generator_ColumnVarNameInTable="columnДата_начала" msprop:Generator_UserColumnName="Дата начала" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap3" msprop:Generator_RowEvHandlerName="zap3RowChangeEventHandler" msprop:Generator_RowDeletedName="zap3RowDeleted" msprop:Generator_RowDeletingName="zap3RowDeleting" msprop:Generator_RowEvArgName="zap3RowChangeEvent" msprop:Generator_TablePropName="zap3" msprop:Generator_RowChangedName="zap3RowChanged" msprop:Generator_RowChangingName="zap3RowChanging" msprop:Generator_TableClassName="zap3DataTable" msprop:Generator_RowClassName="zap3Row" msprop:Generator_TableVarName="tablezap3" msprop:Generator_UserTableName="zap3">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Сотрудник" msprop:Generator_ColumnPropNameInRow="Сотрудник" msprop:Generator_ColumnPropNameInTable="СотрудникColumn" msprop:Generator_ColumnVarNameInTable="columnСотрудник" msprop:Generator_UserColumnName="Сотрудник" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Отделение" msprop:Generator_ColumnPropNameInRow="Отделение" msprop:Generator_ColumnPropNameInTable="ОтделениеColumn" msprop:Generator_ColumnVarNameInTable="columnОтделение" msprop:Generator_UserColumnName="Отделение" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Средний_x0020_оклад" msprop:Generator_ColumnPropNameInRow="Средний_оклад" msprop:Generator_ColumnPropNameInTable="Средний_окладColumn" msprop:Generator_ColumnVarNameInTable="columnСредний_оклад" msprop:Generator_UserColumnName="Средний оклад" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap4" msprop:Generator_RowEvHandlerName="zap4RowChangeEventHandler" msprop:Generator_RowDeletedName="zap4RowDeleted" msprop:Generator_RowDeletingName="zap4RowDeleting" msprop:Generator_RowEvArgName="zap4RowChangeEvent" msprop:Generator_TablePropName="zap4" msprop:Generator_RowChangedName="zap4RowChanged" msprop:Generator_RowChangingName="zap4RowChanging" msprop:Generator_TableClassName="zap4DataTable" msprop:Generator_RowClassName="zap4Row" msprop:Generator_TableVarName="tablezap4" msprop:Generator_UserTableName="zap4">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Отдел" msprop:Generator_ColumnPropNameInRow="Отдел" msprop:Generator_ColumnPropNameInTable="ОтделColumn" msprop:Generator_ColumnVarNameInTable="columnОтдел" msprop:Generator_UserColumnName="Отдел" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Количество_x0020_проектов" msprop:Generator_ColumnPropNameInRow="Количество_проектов" msprop:Generator_ColumnPropNameInTable="Количество_проектовColumn" msprop:Generator_ColumnVarNameInTable="columnКоличество_проектов" msprop:Generator_UserColumnName="Количество проектов" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap5" msprop:Generator_RowEvHandlerName="zap5RowChangeEventHandler" msprop:Generator_RowDeletedName="zap5RowDeleted" msprop:Generator_RowDeletingName="zap5RowDeleting" msprop:Generator_RowEvArgName="zap5RowChangeEvent" msprop:Generator_TablePropName="zap5" msprop:Generator_RowChangedName="zap5RowChanged" msprop:Generator_RowChangingName="zap5RowChanging" msprop:Generator_TableClassName="zap5DataTable" msprop:Generator_RowClassName="zap5Row" msprop:Generator_TableVarName="tablezap5" msprop:Generator_UserTableName="zap5">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Сотрудник" msprop:Generator_ColumnPropNameInRow="Сотрудник" msprop:Generator_ColumnPropNameInTable="СотрудникColumn" msprop:Generator_ColumnVarNameInTable="columnСотрудник" msprop:Generator_UserColumnName="Сотрудник" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Проект" msprop:Generator_ColumnPropNameInRow="Проект" msprop:Generator_ColumnPropNameInTable="ПроектColumn" msprop:Generator_ColumnVarNameInTable="columnПроект" msprop:Generator_UserColumnName="Проект" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Примерная_x0020_дата_x0020_окончания" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="Примерная_дата_окончания" msprop:Generator_ColumnPropNameInTable="Примерная_дата_окончанияColumn" msprop:Generator_ColumnVarNameInTable="columnПримерная_дата_окончания" msprop:Generator_UserColumnName="Примерная дата окончания" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap6" msprop:Generator_RowEvHandlerName="zap6RowChangeEventHandler" msprop:Generator_RowDeletedName="zap6RowDeleted" msprop:Generator_RowDeletingName="zap6RowDeleting" msprop:Generator_RowEvArgName="zap6RowChangeEvent" msprop:Generator_TablePropName="zap6" msprop:Generator_RowChangedName="zap6RowChanged" msprop:Generator_RowChangingName="zap6RowChanging" msprop:Generator_TableClassName="zap6DataTable" msprop:Generator_RowClassName="zap6Row" msprop:Generator_TableVarName="tablezap6" msprop:Generator_UserTableName="zap6">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Сотрудник" msprop:Generator_ColumnPropNameInRow="Сотрудник" msprop:Generator_ColumnPropNameInTable="СотрудникColumn" msprop:Generator_ColumnVarNameInTable="columnСотрудник" msprop:Generator_UserColumnName="Сотрудник" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap7" msprop:Generator_RowEvHandlerName="zap7RowChangeEventHandler" msprop:Generator_RowDeletedName="zap7RowDeleted" msprop:Generator_RowDeletingName="zap7RowDeleting" msprop:Generator_RowEvArgName="zap7RowChangeEvent" msprop:Generator_TablePropName="zap7" msprop:Generator_RowChangedName="zap7RowChanged" msprop:Generator_RowChangingName="zap7RowChanging" msprop:Generator_TableClassName="zap7DataTable" msprop:Generator_RowClassName="zap7Row" msprop:Generator_TableVarName="tablezap7" msprop:Generator_UserTableName="zap7">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Сотрудник" msprop:Generator_ColumnPropNameInRow="Сотрудник" msprop:Generator_ColumnPropNameInTable="СотрудникColumn" msprop:Generator_ColumnVarNameInTable="columnСотрудник" msprop:Generator_UserColumnName="Сотрудник" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Проект" msprop:Generator_ColumnPropNameInRow="Проект" msprop:Generator_ColumnPropNameInTable="ПроектColumn" msprop:Generator_ColumnVarNameInTable="columnПроект" msprop:Generator_UserColumnName="Проект" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Просрочка_x0028_дни_x0029_" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="_Просрочка_дни_" msprop:Generator_ColumnPropNameInTable="_Просрочка_дни_Column" msprop:Generator_ColumnVarNameInTable="_columnПросрочка_дни_" msprop:Generator_UserColumnName="Просрочка(дни)" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap8" msprop:Generator_RowEvHandlerName="zap8RowChangeEventHandler" msprop:Generator_RowDeletedName="zap8RowDeleted" msprop:Generator_RowDeletingName="zap8RowDeleting" msprop:Generator_RowEvArgName="zap8RowChangeEvent" msprop:Generator_TablePropName="zap8" msprop:Generator_RowChangedName="zap8RowChanged" msprop:Generator_RowChangingName="zap8RowChanging" msprop:Generator_TableClassName="zap8DataTable" msprop:Generator_RowClassName="zap8Row" msprop:Generator_TableVarName="tablezap8" msprop:Generator_UserTableName="zap8">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Сотрудник" msprop:Generator_ColumnPropNameInRow="Сотрудник" msprop:Generator_ColumnPropNameInTable="СотрудникColumn" msprop:Generator_ColumnVarNameInTable="columnСотрудник" msprop:Generator_UserColumnName="Сотрудник" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="zap9" msprop:Generator_RowEvHandlerName="zap9RowChangeEventHandler" msprop:Generator_RowDeletedName="zap9RowDeleted" msprop:Generator_RowDeletingName="zap9RowDeleting" msprop:Generator_RowEvArgName="zap9RowChangeEvent" msprop:Generator_TablePropName="zap9" msprop:Generator_RowChangedName="zap9RowChanged" msprop:Generator_RowChangingName="zap9RowChanging" msprop:Generator_TableClassName="zap9DataTable" msprop:Generator_RowClassName="zap9Row" msprop:Generator_TableVarName="tablezap9" msprop:Generator_UserTableName="zap9">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Проект" msprop:Generator_ColumnPropNameInRow="Проект" msprop:Generator_ColumnPropNameInTable="ПроектColumn" msprop:Generator_ColumnVarNameInTable="columnПроект" msprop:Generator_UserColumnName="Проект" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="viewDepartmentDS" targetNamespace="http://tempuri.org/viewDepartmentDS.xsd" xmlns:mstns="http://tempuri.org/viewDepartmentDS.xsd" xmlns="http://tempuri.org/viewDepartmentDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TaskManagementSystemConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TaskManagementSystemConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TaskManagementSystem.Properties.Settings.GlobalReference.Default.TaskManagementSystemConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="viewDepartmentTableAdapter" GeneratorDataComponentClassName="viewDepartmentTableAdapter" Name="viewDepartment" UserDataComponentName="viewDepartmentTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TaskManagementSystemConnectionString (Settings)" DbObjectName="TaskManagementSystem.dbo.viewDepartment" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Название отеделения], [Номер телефона], [Назавние организации] FROM dbo.viewDepartment</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Название отеделения" DataSetColumn="Название отеделения" />
+              <Mapping SourceColumn="Номер телефона" DataSetColumn="Номер телефона" />
+              <Mapping SourceColumn="Назавние организации" DataSetColumn="Назавние организации" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="viewDepartmentDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="viewDepartmentDS" msprop:Generator_DataSetName="viewDepartmentDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="viewDepartment" msprop:Generator_RowEvHandlerName="viewDepartmentRowChangeEventHandler" msprop:Generator_RowDeletedName="viewDepartmentRowDeleted" msprop:Generator_RowDeletingName="viewDepartmentRowDeleting" msprop:Generator_RowEvArgName="viewDepartmentRowChangeEvent" msprop:Generator_TablePropName="viewDepartment" msprop:Generator_RowChangedName="viewDepartmentRowChanged" msprop:Generator_RowChangingName="viewDepartmentRowChanging" msprop:Generator_TableClassName="viewDepartmentDataTable" msprop:Generator_RowClassName="viewDepartmentRow" msprop:Generator_TableVarName="tableviewDepartment" msprop:Generator_UserTableName="viewDepartment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Название_x0020_отеделения" msprop:Generator_ColumnPropNameInRow="Название_отеделения" msprop:Generator_ColumnPropNameInTable="Название_отеделенияColumn" msprop:Generator_ColumnVarNameInTable="columnНазвание_отеделения" msprop:Generator_UserColumnName="Название отеделения" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Номер_x0020_телефона" msprop:Generator_ColumnPropNameInRow="Номер_телефона" msprop:Generator_ColumnPropNameInTable="Номер_телефонаColumn" msprop:Generator_ColumnVarNameInTable="columnНомер_телефона" msprop:Generator_UserColumnName="Номер телефона" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Назавние_x0020_организации" msprop:Generator_ColumnPropNameInRow="Назавние_организации" msprop:Generator_ColumnPropNameInTable="Назавние_организацииColumn" msprop:Generator_ColumnVarNameInTable="columnНазавние_организации" msprop:Generator_UserColumnName="Назавние организации" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

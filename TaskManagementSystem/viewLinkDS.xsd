@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="viewLinkDS" targetNamespace="http://tempuri.org/viewLinkDS.xsd" xmlns:mstns="http://tempuri.org/viewLinkDS.xsd" xmlns="http://tempuri.org/viewLinkDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TaskManagementSystemConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TaskManagementSystemConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TaskManagementSystem.Properties.Settings.GlobalReference.Default.TaskManagementSystemConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="viewLinkTableAdapter" GeneratorDataComponentClassName="viewLinkTableAdapter" Name="viewLink" UserDataComponentName="viewLinkTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TaskManagementSystemConnectionString (Settings)" DbObjectName="TaskManagementSystem.dbo.viewLink" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Название проекта], [Название отделения], [Имя работника] FROM dbo.viewLink</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Название проекта" DataSetColumn="Название проекта" />
+              <Mapping SourceColumn="Название отделения" DataSetColumn="Название отделения" />
+              <Mapping SourceColumn="Имя работника" DataSetColumn="Имя работника" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="viewLinkDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="viewLinkDS" msprop:Generator_DataSetName="viewLinkDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="viewLink" msprop:Generator_RowEvHandlerName="viewLinkRowChangeEventHandler" msprop:Generator_RowDeletedName="viewLinkRowDeleted" msprop:Generator_RowDeletingName="viewLinkRowDeleting" msprop:Generator_RowEvArgName="viewLinkRowChangeEvent" msprop:Generator_TablePropName="viewLink" msprop:Generator_RowChangedName="viewLinkRowChanged" msprop:Generator_RowChangingName="viewLinkRowChanging" msprop:Generator_TableClassName="viewLinkDataTable" msprop:Generator_RowClassName="viewLinkRow" msprop:Generator_TableVarName="tableviewLink" msprop:Generator_UserTableName="viewLink">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Название_x0020_проекта" msprop:Generator_ColumnPropNameInRow="Название_проекта" msprop:Generator_ColumnPropNameInTable="Название_проектаColumn" msprop:Generator_ColumnVarNameInTable="columnНазвание_проекта" msprop:Generator_UserColumnName="Название проекта" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Название_x0020_отделения" msprop:Generator_ColumnPropNameInRow="Название_отделения" msprop:Generator_ColumnPropNameInTable="Название_отделенияColumn" msprop:Generator_ColumnVarNameInTable="columnНазвание_отделения" msprop:Generator_UserColumnName="Название отделения" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Имя_x0020_работника" msprop:Generator_ColumnPropNameInRow="Имя_работника" msprop:Generator_ColumnPropNameInTable="Имя_работникаColumn" msprop:Generator_ColumnVarNameInTable="columnИмя_работника" msprop:Generator_UserColumnName="Имя работника" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

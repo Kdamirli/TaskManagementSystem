@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{786109D4-5D32-4577-BE0B-99725A5651A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TaskManagementSystem</RootNamespace>
+    <AssemblyName>TaskManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLog.Designer.cs">
+      <DependentUpon>AdminLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminReg.Designer.cs">
+      <DependentUpon>AdminReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assignment.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="department.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DirectorLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirectorLog.Designer.cs">
+      <DependentUpon>DirectorLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectorPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirectorPanel.Designer.cs">
+      <DependentUpon>DirectorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectorReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirectorReg.Designer.cs">
+      <DependentUpon>DirectorReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Func.cs" />
+    <Compile Include="link.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MakeAChoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeAChoice.Designer.cs">
+      <DependentUpon>MakeAChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="organization.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="project.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="queryViewsDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>queryViewsDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ucAssignment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ucAssignment.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCAddAssignment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCAddAssignment.Designer.cs">
+      <DependentUpon>UCAddAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCAddDepartment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCAddDepartment.Designer.cs">
+      <DependentUpon>UCAddDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCAddEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCAddEmployee.Designer.cs">
+      <DependentUpon>UCAddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCAddLink.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCAddLink.Designer.cs">
+      <DependentUpon>UCAddLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCAddOrganization.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCAddOrganization.Designer.cs">
+      <DependentUpon>UCAddOrganization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCAddProject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCAddProject.Designer.cs">
+      <DependentUpon>UCAddProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCAssignment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCAssignment.Designer.cs">
+      <DependentUpon>UCAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCDepartment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCDepartment.Designer.cs">
+      <DependentUpon>UCDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCEmployee.Designer.cs">
+      <DependentUpon>UCEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCOrganization.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCOrganization.Designer.cs">
+      <DependentUpon>UCOrganization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCProject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCProject.Designer.cs">
+      <DependentUpon>UCProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UCSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UCSearch.Designer.cs">
+      <DependentUpon>UCSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersAc.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="viewDepartmentDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>viewDepartmentDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="viewEmployeeDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>viewEmployeeDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="viewLinkDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>viewLinkDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="viewOrganizationDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>viewOrganizationDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="viewProjectDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>viewProjectDS.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminLog.resx">
+      <DependentUpon>AdminLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminReg.resx">
+      <DependentUpon>AdminReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectorLog.resx">
+      <DependentUpon>DirectorLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectorPanel.resx">
+      <DependentUpon>DirectorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectorReg.resx">
+      <DependentUpon>DirectorReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakeAChoice.resx">
+      <DependentUpon>MakeAChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="User Controls\UCAddAssignment.resx">
+      <DependentUpon>UCAddAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCAddDepartment.resx">
+      <DependentUpon>UCAddDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCAddEmployee.resx">
+      <DependentUpon>UCAddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCAddLink.resx">
+      <DependentUpon>UCAddLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCAddOrganization.resx">
+      <DependentUpon>UCAddOrganization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCAddProject.resx">
+      <DependentUpon>UCAddProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCAssignment.resx">
+      <DependentUpon>UCAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCDepartment.resx">
+      <DependentUpon>UCDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCEmployee.resx">
+      <DependentUpon>UCEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCOrganization.resx">
+      <DependentUpon>UCOrganization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCProject.resx">
+      <DependentUpon>UCProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UCSearch.resx">
+      <DependentUpon>UCSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="queryViewsDS.xsc">
+      <DependentUpon>queryViewsDS.xsd</DependentUpon>
+    </None>
+    <None Include="queryViewsDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>queryViewsDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="queryViewsDS.xss">
+      <DependentUpon>queryViewsDS.xsd</DependentUpon>
+    </None>
+    <None Include="ucAssignment.xsc">
+      <DependentUpon>ucAssignment.xsd</DependentUpon>
+    </None>
+    <None Include="ucAssignment.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ucAssignment.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ucAssignment.xss">
+      <DependentUpon>ucAssignment.xsd</DependentUpon>
+    </None>
+    <None Include="viewDepartmentDS.xsc">
+      <DependentUpon>viewDepartmentDS.xsd</DependentUpon>
+    </None>
+    <None Include="viewDepartmentDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>viewDepartmentDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="viewDepartmentDS.xss">
+      <DependentUpon>viewDepartmentDS.xsd</DependentUpon>
+    </None>
+    <None Include="viewEmployeeDS.xsc">
+      <DependentUpon>viewEmployeeDS.xsd</DependentUpon>
+    </None>
+    <None Include="viewEmployeeDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>viewEmployeeDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="viewEmployeeDS.xss">
+      <DependentUpon>viewEmployeeDS.xsd</DependentUpon>
+    </None>
+    <None Include="viewLinkDS.xsc">
+      <DependentUpon>viewLinkDS.xsd</DependentUpon>
+    </None>
+    <None Include="viewLinkDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>viewLinkDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="viewLinkDS.xss">
+      <DependentUpon>viewLinkDS.xsd</DependentUpon>
+    </None>
+    <None Include="viewOrganizationDS.xsc">
+      <DependentUpon>viewOrganizationDS.xsd</DependentUpon>
+    </None>
+    <None Include="viewOrganizationDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>viewOrganizationDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="viewOrganizationDS.xss">
+      <DependentUpon>viewOrganizationDS.xsd</DependentUpon>
+    </None>
+    <None Include="viewProjectDS.xsc">
+      <DependentUpon>viewProjectDS.xsd</DependentUpon>
+    </None>
+    <None Include="viewProjectDS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>viewProjectDS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="viewProjectDS.xss">
+      <DependentUpon>viewProjectDS.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
